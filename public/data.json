@@ -1,0 +1,38 @@
+{
+	"coord":{
+		"lon":-69.99,
+		"lat":18.5
+	},
+	"weather":[
+		{"id":804,"main":"Clouds","description":"overcast clouds","icon":"04n"}
+	],
+	"base":"stations",
+	"main":{
+		"temp":299.11,
+		"feels_like":305.53,
+		"temp_min":298.71,
+		"temp_max":299.26,
+		"pressure":1017,
+		"humidity":100
+	},
+	"visibility":10000,
+	"wind":{
+		"speed":0.87,
+		"deg":331
+	},
+	"clouds":{
+		"all":99
+	},
+	"dt":1601780132,
+	"sys":{
+		"type":3,
+		"id":197946,
+		"country":"DO",
+		"sunrise":1601721051,
+		"sunset":1601763995
+	},
+	"timezone":-14400,
+	"id":3492908,
+	"name":"Santo Domingo",
+	"cod":200
+}

@@ -18,8 +18,9 @@ class WeatherContainer extends Component {
 	}
 
 	componentDidMount() {
+		alert(process.env.REACT_APP_APIKEY);
 		fetch(
-			`https://api.openweathermap.org/data/2.5/weather?q=${this.state.searchCity}&lang=${this.state.langData}&appid=19a130195cbae47faccaad1329d97449`
+			`https://api.openweathermap.org/data/2.5/weather?q=${this.state.searchCity}&lang=${this.state.langData}&appid=${process.env.REACT_APP_APIKEY}`
 		)
 			.then((res) => {
 				return res.json();
@@ -34,7 +35,7 @@ class WeatherContainer extends Component {
 
 	componentDidUpdate() {
 		fetch(
-			`https://api.openweathermap.org/data/2.5/weather?q=${this.state.searchCity}&lang=${this.state.langData}&appid=19a130195cbae47faccaad1329d97449`
+			`https://api.openweathermap.org/data/2.5/weather?q=${this.state.searchCity}&lang=${this.state.langData}&appid=${process.env.REACT_APP_APIKEY}`
 		)
 			.then((res) => {
 				return res.json();

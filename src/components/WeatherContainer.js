@@ -18,7 +18,6 @@ class WeatherContainer extends Component {
 	}
 
 	componentDidMount() {
-		alert(process.env.REACT_APP_APIKEY);
 		fetch(
 			`https://api.openweathermap.org/data/2.5/weather?q=${this.state.searchCity}&lang=${this.state.langData}&appid=${process.env.REACT_APP_APIKEY}`
 		)
